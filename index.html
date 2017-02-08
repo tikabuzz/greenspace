@@ -16,7 +16,7 @@
 
 
 
-        <div class="twentytwenty-container">
+        <div id="container1">
           <img src="img/f1.jpg" />
           <img src="img/f2.jpg" />
         </div>
@@ -26,10 +26,9 @@
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
-    $(window).load(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
+   $(window).load(function() {
+  $("#container1").twentytwenty();
+});
     </script>
   </body>
 </html>
